@@ -1,0 +1,78 @@
+/* Add your custom styles here */
+.autocomplete {
+    position: relative;
+  }
+ 
+.autocomplete:nth-child(2) { 
+    position: relative;
+    top: -50px;
+    width: 870px;
+    margin-left: 370px;
+}
+
+  input.form-control {
+    width: 20%;
+    padding-right: 30px; /* To make space for the pointer */
+    transition: width 0.3s ease-in-out; /* Add a transition effect for smoothness */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    position: relative;
+  }
+  
+  input.form-control:focus {
+    width: 60%;
+    border-top: 2px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px ; /* Color of the pointer */
+    transform: translateY(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; 
+    padding: 30px; /* Expand the input width when clicked */
+  }
+  input.form-control:focus + .bi {
+    display: none; /* Hide the icon when input is focused */
+  }
+  input.form-control::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #ced4da; /* Color of the pointer */
+    transform: translateY(-50%);
+  }
+  /* Add your custom styles here */
+.bi {
+    position: relative;
+    left: 165px; /* Adjust the left position */
+    top: -32px; /* Adjust the top position */
+    z-index: 10; /* Set z-index to ensure it appears above the input field */
+}
+
+  
+  .suggestions {
+    display:none;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 40%;
+  
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: none;
+    z-index: 1;
+  }
+  
+  .suggestions div {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .suggestions div:hover {
+    background-color: #E6EbEF;
+  }
+  /* Add your custom styles here */
+
+  
+  
